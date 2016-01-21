@@ -1,0 +1,43 @@
+* {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-family: Georgia;
+	color: red;
+	font-size: 1.75em;
+	margin: 25px 25px 25px 25px;
+	width: 75%;
+}
+
+h2 {
+	font-size: 1.25em;
+	color: white;
+	font-family:Comic Sans;
+	margin-left: 75%;
+}
+
+p {
+	font-family: Courier new, Courier;
+	color:lightgreen;
+}
+
+img {
+	margin:auto;
+	position:static;
+	border: solid white;
+}
+
+a:hover {
+	font-size: 5em;
+}
+
+a:link {
+	color:white;
+	background-color:darkgrey;
+}
+
+a:visited {
+	border: dashed red;
+}
