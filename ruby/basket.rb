@@ -1,4 +1,4 @@
-
+####################     RUBY BASKETBALL SIMULATOR    #########################
 
 def score()
 end
