@@ -1,6 +1,11 @@
 class Team
+
   def initialize(name, g, f, bck)
-	@name = name; 
+  	if (name.empty?)
+  	  @name = "Rhode Island Rubyists"
+  	else
+	  @name = name; 
+	end
 	@g = g; 
 	@f = f; 
 	@bck = bck; 
@@ -12,7 +17,11 @@ class Team
 	@o_pts = 0;
   end
 	
-  def printRoster()
-		puts "ROSTER:" 
+  def printRoster
+    puts @name.upcase + " 2016 ROSTER: " 
+    @g.printPlayer
+    @f.printPlayer
+    @bck.printPlayer
   end
+
 end
