@@ -1,48 +1,52 @@
 ####################     RUBY BASKETBALL SIMULATOR    #########################
+=begin   
+Original Game Features: 
+ - Two on Two Basketball Action
+ - One Player
+ - Customize your Team & Players
+ - 10 Game Season
+ - Playoffs & Championship
+ - Game Secrets
+ - Statistics (Wins, Losses, PPG)
+ - Injuries
+ - In-Game Substitutions
+ - Multi-Color Text
+ - Blinking Text
+ New Features:
+ - NEW Stats: Minutes,
 
-def score()
+=end
+require_relative "player.rb"
+require_relative "logos.rb"
+def score_points(player, minutes)
 end
+
+def play_game(team1, team2)
+  
+end
+
+# Define Colors
 pen_red = "\x1b[31m"
 bg_yellow = "\x1b[103m"
-puts "South Florida Basketball Leauge"
+# Game Begins
+puts "::::::::::::::::  Ruby Basketball League  ::::::::::::::::"
 print "\nEnter the name of your team "
 team = gets.chomp()
 # if team = "" THEN GOTO 8888 ELSE GOTO 5
 print "Enter the name of your guard "
 g = gets.chomp()
+guard =  Player.new(g, "Guard")
 print "Enter the name of your forward "
 f = gets.chomp()
 print "Enter the name of your backup "
 bck = gets.chomp()
-sleep(1)
+sleep(0)
 system "clear" or system "cls"
-puts pen_red + bg_yellow + "#{team}'s first game vs. the Heat"
-puts"                      .
-                         ,-; . ,
-                ________i_,',//
-          _odHHHHHHHHHHHHHHHHbo_
-        dP^'         ;.| ||,; `^?b
-       |H           ))`'||/';    H|
-        ?bo.     .=;'   |||.' ,odP
-          `?oo.-','     ||'oodP'
-            /'  /      / |/
-           |   |    _-'  ||
-          ||  |   ,'     J|
-          | \\ |   |     / |
-           |_\\ L  L  .-' |
-            \\.)`-.;-;__./
-              \\\"-._;_.-\"
- 
-
-       || ||  ||   |||   || ||  ||
-      |||||| ||  || ||  |||||| || ,|
-     || | || || || `|| || | || || `|
-                                   J
-            || || ||==   ||| ==||='
-           ||=|| ||==  || ||  ||
-           || || ||== || `||  || "
-puts "\nDwanye Wade"
-puts "Chris Bosh"
+puts pen_red + bg_yellow #+ "#{team}'s first game vs. the Heat"
+guard.print()
+#puts miami_logo
+#puts "\nDwanye Wade"
+#puts "Chris Bosh"
 # IF bck$ = "playoff" THEN GOTO 5000 ELSE GOTO 20
 =begin
 On Thu, Feb 11, 2016 at 8:14 PM, Luis Ybarra <lrybarra@gmail.com> wrote:
